@@ -1,0 +1,64 @@
+(env_for_bk) C:\Users\stepo\Desktop\MIPT_Lessons_9th_semester\cifrocaf\database\bk_project\project_bookkeeper>pylint bookkeeper
+************* Module C:\Users\stepo\Desktop\MIPT_Lessons_9th_semester\cifrocaf\database\bk_project\project_bookkeeper\.pylintrc
+.pylintrc:1:0: F0011: error while parsing the configuration: While reading from 'C:\\Users\\stepo\\Desktop\\MIPT_Lessons_9th_semester\\cifrocaf\\database\\bk_project\\project_bookkeeper\\.pylintrc' [line  3]: option 'extension-pkg-allow-list' in section 'MASTER' already exists (config-parse-error)
+************* Module bk_project.project_bookkeeper.bookkeeper.simple_client
+bookkeeper\simple_client.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bookkeeper\simple_client.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+bookkeeper\simple_client.py:8:8: W0621: Redefining name 'app' from outer scope (line 19) (redefined-outer-name)
+bookkeeper\simple_client.py:14:0: C0116: Missing function or method docstring (missing-function-docstring)
+bookkeeper\simple_client.py:2:0: C0411: standard import "sys" should be placed before third party import "PySide6.QtWidgets" (wrong-import-order)
+************* Module bk_project.project_bookkeeper.bookkeeper.utils
+bookkeeper\utils.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bookkeeper\utils.py:61:8: R1703: The if statement can be replaced with 'return bool(test)' (simplifiable-if-statement)
+bookkeeper\utils.py:61:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+bookkeeper\utils.py:39:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+bookkeeper\utils.py:3:0: C0411: standard import "datetime" should be placed before third party import "PySide6.QtWidgets.QMessageBox" (wrong-import-order)
+************* Module bk_project.project_bookkeeper.bookkeeper.models.budget
+bookkeeper\models\budget.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bookkeeper\models\budget.py:25:17: W0613: Unused argument 'pk' (unused-argument)
+bookkeeper\models\budget.py:27:17: W0613: Unused argument 'spent_sum' (unused-argument)
+bookkeeper\models\budget.py:28:17: W0613: Unused argument 'budget' (unused-argument)
+************* Module bk_project.project_bookkeeper.bookkeeper.models.category
+bookkeeper\models\category.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module bk_project.project_bookkeeper.bookkeeper.models.expense
+bookkeeper\models\expense.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bookkeeper\models\expense.py:6:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module bk_project.project_bookkeeper.bookkeeper.models
+bookkeeper\models\__init__.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bookkeeper\models\__init__.py:1:0: C0103: Constant name "q" doesn't conform to UPPER_CASE naming style (invalid-name)
+************* Module bk_project.project_bookkeeper.bookkeeper.repository.abstract_repository
+bookkeeper\repository\abstract_repository.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bookkeeper\repository\abstract_repository.py:5:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+bookkeeper\repository\abstract_repository.py:15:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module bk_project.project_bookkeeper.bookkeeper.repository.memory_repository
+bookkeeper\repository\memory_repository.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bookkeeper\repository\memory_repository.py:162:4: E0213: Method 'get_pk' should have "self" as first argument (no-self-argument)
+bookkeeper\repository\memory_repository.py:7:0: C0411: standard import "sqlite3" should be placed before third party imports "repository.abstract_repository.AbstractRepository", "models.category.Category", "models.expense.Expense" (wrong-import-order)
+bookkeeper\repository\memory_repository.py:8:0: C0412: Imports from package repository are not grouped (ungrouped-imports)
+************* Module bk_project.project_bookkeeper.bookkeeper.repository.sqlite_repository
+bookkeeper\repository\sqlite_repository.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bookkeeper\repository\sqlite_repository.py:30:4: C0116: Missing function or method docstring (missing-function-docstring)
+bookkeeper\repository\sqlite_repository.py:32:8: W0105: String statement has no effect (pointless-string-statement)
+************* Module bk_project.project_bookkeeper.bookkeeper.view.budget_app
+bookkeeper\view\budget_app.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bookkeeper\view\budget_app.py:84:16: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
+bookkeeper\view\budget_app.py:51:8: W0201: Attribute 'budget_input_widget' defined outside __init__ (attribute-defined-outside-init)
+************* Module bk_project.project_bookkeeper.bookkeeper.view.categories_tracker
+bookkeeper\view\categories_tracker.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bookkeeper\view\categories_tracker.py:14:4: C0103: Variable name "G" doesn't conform to snake_case naming style (invalid-name)
+bookkeeper\view\categories_tracker.py:34:0: R0902: Too many instance attributes (8/7) (too-many-instance-attributes)
+bookkeeper\view\categories_tracker.py:196:8: R1702: Too many nested blocks (6/5) (too-many-nested-blocks)
+************* Module bk_project.project_bookkeeper.bookkeeper.view.expense_tracker
+bookkeeper\view\expense_tracker.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bookkeeper\view\expense_tracker.py:8:0: R0902: Too many instance attributes (9/7) (too-many-instance-attributes)
+bookkeeper\view\expense_tracker.py:169:4: C0116: Missing function or method docstring (missing-function-docstring)
+bookkeeper\view\expense_tracker.py:217:4: R0914: Too many local variables (20/15) (too-many-locals)
+bookkeeper\view\expense_tracker.py:271:23: W0718: Catching too general exception Exception (broad-exception-caught)
+bookkeeper\view\expense_tracker.py:3:0: C0411: standard import "datetime" should be placed before third party imports "PySide6.QtWidgets", "models.expense.Expense" (wrong-import-order)
+************* Module bk_project.project_bookkeeper.bookkeeper.view.Main_window
+bookkeeper\view\Main_window.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bookkeeper\view\Main_window.py:1:0: C0103: Module name "Main_window" doesn't conform to snake_case naming style (invalid-name)
+bookkeeper\view\Main_window.py:10:0: R0902: Too many instance attributes (9/7) (too-many-instance-attributes)
+
+------------------------------------------------------------------
+Your code has been rated at 9.21/10 (previous run: 0.00/10, +9.21)
