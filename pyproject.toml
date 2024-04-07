@@ -22,3 +22,4 @@ build-backend = "poetry.core.masonry.api"
 [tool.flake8]
 max-line-length = 90
 max-complexity = 10
+

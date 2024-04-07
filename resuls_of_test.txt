@@ -1,0 +1,48 @@
+(env_for_bk) C:\Users\stepo\Desktop\MIPT_Lessons_9th_semester\cifrocaf\database\bk_project\application>pytest --cov bookkeeper
+======================================= test session starts ========================================
+platform win32 -- Python 3.10.0, pytest-8.1.1, pluggy-1.4.0
+PySide6 6.6.2 -- Qt runtime 6.6.2 -- Qt compiled 6.6.2
+rootdir: C:\Users\stepo\Desktop\MIPT_Lessons_9th_semester\cifrocaf\database\bk_project\application
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.3.0, cov-5.0.0, qt-4.4.0
+collected 78 items
+
+tests\test_models\test_budget.py ....                                                         [  5%]
+tests\test_models\test_category.py ....                                                       [ 10%]
+tests\test_models\test_expense.py ..                                                          [ 12%]
+tests\test_repository\test_abstract_repository.py .......                                     [ 21%]
+tests\test_repository\test_memory_respository.py ............                                 [ 37%]
+tests\test_repository\test_sqlite_repository.py .....                                         [ 43%]
+tests\test_view\test_budget_app.py .....E                                                     [ 50%]
+tests\test_view\test_categories_tracker.py ..............                                     [ 67%]
+tests\test_view\test_expense_tracker.py .........F.....                                       [ 87%]
+tests\test_view\test_main_window.py ..........                                                [100%]
+
+
+---------- coverage: platform win32, python 3.10.0-final-0 -----------
+Name                                           Stmts   Miss  Cover
+------------------------------------------------------------------
+bookkeeper\__init__.py                             0      0   100%
+bookkeeper\models\__init__.py                      1      0   100%
+bookkeeper\models\budget.py                       22      1    95%
+bookkeeper\models\category.py                     13      1    92%
+bookkeeper\models\expense.py                      10      0   100%
+bookkeeper\repository\__init__.py                  0      0   100%
+bookkeeper\repository\abstract_repository.py      16      0   100%
+bookkeeper\repository\memory_repository.py        95     25    74%
+bookkeeper\repository\sqlite_repository.py        54      3    94%
+bookkeeper\simple_client.py                       17     17     0%
+bookkeeper\utils.py                               31     11    65%
+bookkeeper\view\Main_window.py                    47      0   100%
+bookkeeper\view\__init__.py                        0      0   100%
+bookkeeper\view\budget_app.py                     62      5    92%
+bookkeeper\view\categories_tracker.py            120     44    63%
+bookkeeper\view\expense_tracker.py               143     50    65%
+------------------------------------------------------------------
+TOTAL                                            631    157    75%
+
+=================================================================== short test summary info ===================================================================
+FAILED tests/test_view/test_expense_tracker.py::test_init_ui - assert <built-in method connect of PySide6.QtCore.SignalInstance object at 0x0000022DAAD3D7D0> == 1
+ERROR tests/test_view/test_budget_app.py::test_budget_input_widget_create_budget - Failed: TEARDOWN ERROR: Exceptions caught in Qt event loop:
+===================================================== 1 failed, 76 passed, 2 warnings, 1 errors in 24.51s =====================================================

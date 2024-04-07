@@ -1,0 +1,26 @@
+QWidget {
+    background-color: #00008B; /* синий фон */
+    color: #FFFFFF; /* белые буквы */
+    font-family: "Courier New", monospace; /* пиксельные буквы */
+}
+QTableWidget {
+    background-color: #00008B;
+    color: #FFFFFF;
+    gridline-color: #FFFFFF; /* белые линии в таблице */
+    font-family: "Courier New", monospace;
+}
+QTableWidget QHeaderView::section {
+    background-color: #00008B;
+    color: #FFFFFF; /* цвет текста заголовков */
+}
+QPushButton {
+    background-color: #4169E1; /* цвет кнопок */
+    color: #FFFFFF;
+    font-family: "Courier New", monospace;
+    border: 1px solid #FFFFFF; /* белая граница */
+    border-radius: 4px; /* закругленные углы */
+    padding: 5px 10px; /* отступы внутри кнопки */
+}
+QPushButton:hover {
+    background-color: #0000CD; /* изменение цвета при наведении */
+}
