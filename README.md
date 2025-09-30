@@ -1,18 +1,32 @@
-Здравствуйте!
-это приложение для ведения домашней бухгалтерии
-визуальный стиль - это закос под BIOS, но вы имеете полное право его поменять
-для этого отредактируйте файл bookkeeper\stile.txt
-и да, я намеряно дал ему название с ошибкой
+# Hello!
 
-для корректной работы вам потребуется:
-- python 3.10
-- PySide6
-- Numpy
-- sqlite3
-- abc, typing, intertools, dataclass, но они входят в стандартную библиотеку питона
+This is a **home accounting application**, created as a coursework assignment at the MIPT.  
+The goal of the project was to **learn SQLite properly**, implement testing, and create reports based on financial data.  
 
-Запускается приложение через bookkeeper/simple-client.py
+> Note: The name is intentionally misspelled 😉
 
-видео с примером использования есть в корневой директории, .txt отчёты об анализе - тоже (и в HTML)
+## Overview
+The application is essentially **a SQLite database with a Python wrapper**, providing a graphical interface.  
+Through the GUI, you can:  
+- Add, edit, and delete expenses and expense categories  
+- View statistics and reports  
+
+## Requirements
+- Python 3.10  
+- PySide6  
+- Numpy  
+- sqlite3 (built-in)  
+- Standard Python libraries: abc, typing, itertools, dataclasses  
+
+A video demonstrating usage is included in the root directory.
+Also the screenshot of unreal design is there:
+![Demo](SQDemo.png)
+
+
+## How to Run
+Run the application via:  
+```bash
+python bookkeeper/simple-client.py
+
 
 
