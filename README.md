@@ -20,7 +20,7 @@ Through the GUI, you can:
 
 A video demonstrating usage is included in the root directory.
 Also the screenshot of unreal design is there:
-![Demo](SQDemo.png)
+![Demo](SQDEmo.png)
 
 
 ## How to Run
